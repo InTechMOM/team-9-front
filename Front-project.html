@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Stylo.css">
+	<title>Cargar Video</title>
+</head>
+<body>
+	
+	<div class="contact_form">
+
+		<div class="formulario-p">			
+      <h1>Cargar video</h1>
+				<h3>Diligencia los siguientes campos</h3>
+
+
+					<form action="proj.js" method="post" id="formulario">				
+
+								<p>
+									<label>Agregar URL del video</label>
+										<input type="url" name="introducir_url" id="url-video" required="obligatorio" placeholder="Agregar URL del video" value="">
+								</p>
+
+								<p>
+									<label for="nombre" class="colocar_nombre">Titulo del video
+									</label>
+										<input type="text" name="introducir_titulo_video" id="titulo" required="obligatorio" placeholder="Titulo del video" value="">
+								</p>
+							
+								<p>
+									<label>Descripción sobre tu video
+									</label>                     
+                               		  <textarea name="desc_video" class="descripcion_v" id="descripcion" required="obligatorio" placeholder="Descripción sobre tu video" value=""></textarea> 
+                               	</p>
+
+                               	<p>
+									<label for="asunto" class="colocar_asunto">Proyecto al que esta asociado el video</label>
+										<input type="text" name="introducir_project_asociado" id="asociado" required="obligatorio" placeholder="Proyecto al que esta asociado el video" value="">
+								</p>
+
+                               	<p>
+									<label>Nombre y apellido del lider del proyecto
+									</label>
+										<input type="text" name="nombres_lider" id="lider" required="obligatorio" placeholder="Nombre y apellido del lider del proyecto" value="">
+								</p>					
+								
+
+                               	<p>
+									<label class="correo-project">Correo electronico del lider del proyecto
+									</label>
+										<input type="email" name="Correo" id="email-proyect" required="obligatorio" placeholder="Escribe tu Email" value="">
+								</p>  								
+							
+								
+					<button type="submit" class="Guardar"><p>Guardar</p></button>
+						
+					</form>
+				<h3 id= "respuesta"></h3>
+		</div>	
+	</div>
+<script src="proj.js"></script>
+</body>
+</html>
