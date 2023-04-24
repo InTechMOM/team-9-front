@@ -3,15 +3,30 @@
 
 input{
 	background-color: #fbfbfb; 
-	height: 40px; 
+	height: 50px; 
 	border-radius: 5px;  
 	border-style: solid; 
 	border-width: 1px; 
 	border-color: #148F77; 
 	margin-top: 10px;  
 	padding-left: 10px;
-  margin-bottom: 20px; 
+    margin-bottom: 20px; 
 }
+
+.jet1{
+    width: 20px;
+    margin: 12px 42px 8px 80px;
+}
+.jet2{
+    width: 20px;
+    margin: 12px 42px 8px 80px;
+}
+
+label.opciones{
+    text-align: center;
+    width: 340px;
+}
+
 
 button{
 	height: 45px; 
@@ -102,7 +117,6 @@ button{
     font-size: 14px;
     text-decoration: none;
     overflow: hidden;
-    margin-top: 30px;
 	background: #56BC8C;
 	border-radius: 24px;
 	text-align: center;
@@ -138,8 +152,8 @@ button{
     display: inline;
     padding: 5px;
 	background: rgba(86, 188, 140, 0.76);
-    border-radius: 32px;
-	margin-top: 50px;
+    border-radius: 10px;
+	margin-top: 30px;
 }
 
 .opc-2{
@@ -148,13 +162,13 @@ button{
     display: inline;
     padding: 5px;
 	background: rgba(86, 188, 140, 0.76);
-    border-radius: 32px;
+    border-radius: 10px;
 }
 
 .opciones{
 	font-family: sans-serif;
 	font-size: 14px;
-	display: initial;
+	display: block;
 }
 
 

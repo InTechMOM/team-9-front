@@ -99,7 +99,7 @@ border-radius: 42px;
   .iconBar a {
     display: list-item;
     text-align: center;
-    padding: 15px;
+    padding: 25px;
     transition: all 0.5s ease;
     color: white;
     font-size: 35px;
@@ -118,7 +118,7 @@ border-radius: 42px;
     height: 72px;
     width: 65px;
     left: 0px;
-    top: 1px;
+    top: 15px;
 }
 
 .reproducir{
@@ -126,7 +126,39 @@ border-radius: 42px;
     height: 72px;
     width: 65px;
     left: 0px;
-    top: 68px;
+    top: 98px;
+}
+
+.conocimiento{
+  position: absolute;
+  height: 72px;
+  width: 65px;
+  left: 0px;
+  top: 15px;
+}
+
+.clic{
+  position: absolute;
+  height: 72px;
+  width: 65px;
+  left: 0px;
+  top: 107px;
+}
+
+.pelicula{
+  position: absolute;
+  height: 72px;
+  width: 65px;
+  left: 0px;
+  top: 190px;
+}
+
+.medalla{
+  position: absolute;
+  height: 72px;
+  width: 65px;
+  left: 0px;
+  top: 273px;
 }
 /******************************************Cierre Menú vertical************************************************/
 .contact_form{	
@@ -173,6 +205,7 @@ border-radius: 42px;
 
 .user-box {
     position: relative;
+    margin-top: 32px;
 }
 
 .user-box-input {
@@ -196,8 +229,23 @@ border-radius: 42px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
-    background: #EAF9F2;
+    background: #EAF9F2; 
 }
+
+.user-box-descripción{
+
+  width: 95%;
+  padding: 10px 0;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: #EAF9F2;
+
+}
+
 .user-box-label {
     position: absolute;
     top: 0;
@@ -230,19 +278,20 @@ border-radius: 42px;
 .login-box-button {
     position: relative;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     overflow: hidden;
     margin-top: 30px;
-	background: #56BC8C;
+	background: #208656;
 	border-radius: 24px;
 	text-align: center;
-    width: 120px;
+    width: 220px;
 	margin-inline: auto;
 	text-transform: math-auto;
 	cursor: pointer;
     margin-right: 35px;
     display: block;
+    height: 60px;
 	
 }
 
@@ -283,3 +332,33 @@ button{
     cursor: pointer;
 }
 
+
+video {
+  width: 320px;
+  height: 240px;
+}
+
+.contenedor-label{
+  position: relative;
+ 
+}
+
+.label-1{
+  position: absolute;
+
+}
+
+.label-2{
+  position: absolute;
+
+}
+
+.label-3{
+  position: absolute;
+
+}
+
+.label-4{
+  position: absolute;
+
+}
