@@ -362,3 +362,68 @@ video {
   position: absolute;
 
 }
+
+/******************************************Botones desplegables************************************************/
+
+.seleccionar{
+  height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: math-auto;
+	background-color: #BAEBD4; 
+	border-color: #BAEBD4; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 200px;   
+    cursor: pointer;
+}
+.seleccionar1{
+  height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: math-auto;
+	background-color: #BAEBD4; 
+	border-color: #BAEBD4; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 200px;   
+    cursor: pointer;
+}
+
+/******************************************Botones desplegables************************************************/ 
+
+table {
+  background: white;
+  width: 95%;
+  margin: inherit;
+  margin-top: 2%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th {
+  background-color: #BAEBD4;
+  height: 35px;
+  border-bottom: 1px solid rgb(210, 220, 250);
+  color: rgb(7, 7, 7);
+}
+
+td {
+  color: rgba(100, 100, 100, 60);
+  height: 30px;
+  border: 0.5px solid rgba(240, 240, 240, 10);
+  text-align: center;
+}
+
+.input-cal{
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: #EAF9F2;
+  margin-bottom: 10px;
+}

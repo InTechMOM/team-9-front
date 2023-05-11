@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../styles/estilo-index.css">
+	<title>Cargar Video</title>
+</head>
+
+<header>
+	<div class="container row">
+		<img class="icono" src="../img/icon.jpg"> </img>
+	  <nav class="nav">
+	  </nav>
+<!--Opción de menú en signed in as-->
+<span flex></span>
+          <img ng-src="http://www.emotiyou.es/galerie/films/action/batman/201101191527UNP.gif" class="md-avatar-login">
+      <md-menu>
+ <!-- Trigger element is a md-button with an icon -->
+ 
+<!--Termina opción de menú en signed in as-->
+	</div>
+  </header>
+
+<body>
+	
+	<div class="contact_form">		
+			<h2 class="heading-login-box">Cargar video</h2>
+					<form action="https://intechmom.github.io/team-9-front/vista-1-estudiante.html" method="post" id="formulario">	
+						
+						<div class="iconBar">
+							<a class="active" href="#"><i class="fa fa-home"></i><img class="subir" src="../img/subir.png"> </img></a> 
+							<a href="#"><i class="fa fa-search"></i><img class="reproducir" src="../img/pelicula.png"> </img></a>   
+						  </div>
+
+						<div class="user-box">							
+							<input class="user-box-input" type="url" required placeholder="Agregar URL del video">
+							<label class="user-box-label">Agregar URL del videoproyecto</label>
+						</div>
+						
+						<div class="user-box">							
+							<input class="user-box-input" type="text" required placeholder="Agregar titulo">
+							<label class="user-box-label">Título del video</label>
+						</div>
+
+						<div class="user-box">							
+							<textarea class="user-box-textarea" type="text" required placeholder="Agregar descripción"></textarea> 
+							<label class="user-box-label">Descripción del video</label>
+						</div>
+							
+									
+					<button type="submit" class="login-box-button"><p>Guardar</p></button>
+					</form>
+	</div>
+
+</body>
+</html>
