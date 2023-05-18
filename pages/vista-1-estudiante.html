@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/estilo-index.css">
-    <link rel="stylesheet" type="text/css" href="../vista-1-docente.html">
-    <script src="../scripts/proj.js"></script>
-	<title>Cargar</title>
+	<link rel="stylesheet" type="text/css" href="../vista-1-docente.html">
+	<script src="../scripts/proj.js"></script>
+	<script src="/scripts/script.js"></script>
+	<title>Cargar video</title>
 </head>
 
 <header>
 	<div class="container row">
 		<img class="icono" src="../img/icon.jpg"> </img>
-	  <nav class="nav">
-	  </nav>
-<!--Opción de menú en signed in as-->
-<span flex></span>
-          <img ng-src="http://www.emotiyou.es/galerie/films/action/batman/201101191527UNP.gif" class="md-avatar-login">
-      <md-menu>
-<!-- Trigger element is a md-button with an icon -->
- 
-<!--Termina opción de menú en signed in as-->
+		<nav class="nav">
+		</nav>
+		<!--Opción de menú en signed in as-->
+		<span flex></span>
+		<img ng-src="http://www.emotiyou.es/galerie/films/action/batman/201101191527UNP.gif" class="md-avatar-login">
+		<md-menu>
+			<!-- Trigger element is a md-button with an icon -->
+
+			<!--Termina opción de menú en signed in as-->
 	</div>
-  </header>
+</header>
 
 <body>
-	
-	<div class="contact_form">		
+
+	<div class="contact_form">
 
 
-			<h2 class="heading-login-box">Video 1:</h2> 
-					<form action="https://intechmom.github.io/team-9-front/pages/carga-video" method="post" id="formulario" onsubmit="validarCalificacion();">	
-						
-						<div class="iconBar">
-							<a class="active" href="#"><i class="fa fa-home"></i><img class="conocimiento" src="../img/conocimiento.png"> </img></a> 
-							<a href="#"><i class="fa fa-search"></i><img class="clic" src="../img/insignia.png"> </img></a>
-							<!--<a href="#"><i class="fa fa-search"></i><img class="pelicula" src="./img/pelicula.png"> </img></a>
+		<h2 class="heading-login-box">Video 1:</h2>
+		<form action="https://intechmom.github.io/team-9-front/pages/carga-video" method="post" id="formulario"
+			onsubmit="validarCalificacion();">
+
+			<div class="iconBar">
+				<a class="active" href="#"><i class="fa fa-home"></i><img class="conocimiento"
+						src="../img/conocimiento.png"> </img></a>
+				<a href="#"><i class="fa fa-search"></i><img class="clic" src="../img/insignia.png"> </img></a>
+				<!--<a href="#"><i class="fa fa-search"></i><img class="pelicula" src="./img/pelicula.png"> </img></a>
 							<a href="#"><i class="fa fa-search"></i><img class="medalla" src="./img/profesor.png"> </img></a> -->
-							  
-						</div>
 
-						
-                          <!--Video de youtube-->
-                          <iframe width="460" height="315" src="https://www.youtube.com/embed/NWvFO3GjB4w" 
-                          frameborder="0" allowfullscreen></iframe>
+			</div>
 
-						  <!--Tabla de calificaciones-->
-						  <table>
-							<thead>
-							  <tr>
-								<th> Habilidades </th>
-								<th>Ser</th>
-								<th>Saber</th>
-								<th>Hacer</th>
-							  </tr>
-							</thead>
-							<tbody>
-							  <tr>
-								<td style="text-align: left;"> Trabajo colaborativo </td>
-								<td><input type="text" class="input-cal" id="resultado"></td>
-								<td><input type="text"  class="input-cal" id="resultado"></td>
-								<td><input type="text"  class="input-cal" id="resultado"></td>
-							  </tr>
-							  <tr>
-								<td style="text-align: left;"> Creatividad </td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-							  </tr>
-							  <tr>
-								<td style="text-align: left;"> Comunicación </td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-							  </tr>
-							  <tr>
-								<td style="text-align: left;"> Pensamiento Crítico </td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-								<td><input type="text" class="input-cal"></td>
-							  </tr>
-							</tbody>
-						  </table>
-						
-						<div class="user-box">							
-							<input class="user-box-textarea"></input> 
-							<label class="user-box-label">Calificación general</label>
-						</div>
 
-						<div class="user-box">							
-							<textarea class="user-box-textarea"></textarea> 
-							<label class="user-box-label"><br> Observaciones generales </br></label>
-						</div>
-							
-									
-					<button type="submit" class="login-box-button"><p>Atras</p></button>
-						
-					</form>
-					<script src="./scripts/calificacion.js"></script>
+			<!--Video de youtube-->
+			<iframe width="460" height="315" src="https://www.youtube.com/embed/NWvFO3GjB4w" frameborder="0"
+				allowfullscreen></iframe>
+
+			<!--Tabla de calificaciones-->
+			<table>
+				<thead>
+					<tr>
+						<th> Habilidades </th>
+						<th>Ser</th>
+						<th>Saber</th>
+						<th>Hacer</th>
+					</tr>
+				</thead>
+				<tbody id="tablaDatos">
+					<tr>
+						<td style="text-align: left;"> Trabajo colaborativo </td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td style="text-align: left;"> Creatividad </td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td style="text-align: left;"> Comunicación </td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td style="text-align: left;"> Pensamiento Crítico </td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="user-box">
+				<input class="user-box-textarea"></input>
+				<label class="user-box-label">Calificación general</label>
+			</div>
+
+			<div class="user-box" onclick= "mostrarCalificaciones()">
+				<textarea class="user-box-textarea" id="observacionesGenerales"></textarea>
+				<label class="user-box-label"><br> Observaciones generales </br></label>
+			</div>
+
+
+			<button type="submit" class="login-box-button">
+				<p>Atras</p>
+			</button>
+
+		</form>
 	</div>
 </body>
+
 </html>
