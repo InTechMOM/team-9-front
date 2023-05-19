@@ -66,6 +66,14 @@ function guardarEvaluacion() {
 
 //muestro en la pantalla del estudiante
 function mostrarCalificaciones() {
+  const mensajes = {
+    1: "Inténtalo otra vez",
+    2: "Podemos mejorar",
+    3: "Lo estás logrando",
+    4: "Eres genial",
+    5: "Eres asombroso"
+  };
+
   const informacion= JSON.parse(localStorage.getItem('evaluacion'));
   console.log(informacion)
   if (!informacion) return ""
@@ -74,21 +82,21 @@ let tablaDatos= document.getElementById('tablaDatos');
 //console.log(tablaDatos.firstChild.textContent = informacion.calificaciones[0])
 console.log(tablaDatos.childNodes)
 //lógica básica para mostrar en la primera fila
-const trSer1 = tablaDatos.childNodes[1].childNodes[3].textContent = informacion.calificaciones[0];
-const trSer2 = tablaDatos.childNodes[1].childNodes[5].textContent = informacion.calificaciones[1];
-const trSer3 = tablaDatos.childNodes[1].childNodes[7].textContent = informacion.calificaciones[2];
+const trSer1 = tablaDatos.childNodes[1].childNodes[3].textContent = mensajes[informacion.calificaciones[0]];
+const trSer2 = tablaDatos.childNodes[1].childNodes[5].textContent = mensajes[informacion.calificaciones[1]];
+const trSer3 = tablaDatos.childNodes[1].childNodes[7].textContent = mensajes[informacion.calificaciones[2]];
 //SEGUNDA FILA
-const trSer4 = tablaDatos.childNodes[3].childNodes[3].textContent = informacion.calificaciones[3];
-const trSer5 = tablaDatos.childNodes[3].childNodes[5].textContent = informacion.calificaciones[4];
-const trSer6 = tablaDatos.childNodes[3].childNodes[7].textContent = informacion.calificaciones[5];
+const trSer4 = tablaDatos.childNodes[3].childNodes[3].textContent = mensajes[informacion.calificaciones[3]];
+const trSer5 = tablaDatos.childNodes[3].childNodes[5].textContent = mensajes[informacion.calificaciones[4]];
+const trSer6 = tablaDatos.childNodes[3].childNodes[7].textContent = mensajes[informacion.calificaciones[5]];
 //tercera FILA
-const trSer7 = tablaDatos.childNodes[5].childNodes[3].textContent = informacion.calificaciones[6];
-const trSer8 = tablaDatos.childNodes[5].childNodes[5].textContent = informacion.calificaciones[7];
-const trSer9 = tablaDatos.childNodes[5].childNodes[7].textContent = informacion.calificaciones[8];
+const trSer7 = tablaDatos.childNodes[5].childNodes[3].textContent = mensajes[informacion.calificaciones[6]];
+const trSer8 = tablaDatos.childNodes[5].childNodes[5].textContent = mensajes[informacion.calificaciones[6]];
+const trSer9 = tablaDatos.childNodes[5].childNodes[7].textContent = mensajes[informacion.calificaciones[8]];
 //cuarta FILA
-const trSer10 = tablaDatos.childNodes[7].childNodes[3].textContent = informacion.calificaciones[9];
-const trSer11 = tablaDatos.childNodes[7].childNodes[5].textContent = informacion.calificaciones[10];
-const trSer12 = tablaDatos.childNodes[7].childNodes[7].textContent = informacion.calificaciones[11];
+const trSer10 = tablaDatos.childNodes[7].childNodes[3].textContent = mensajes[informacion.calificaciones[9]];
+const trSer11 = tablaDatos.childNodes[7].childNodes[5].textContent = mensajes[informacion.calificaciones[10]];
+const trSer12 = tablaDatos.childNodes[7].childNodes[7].textContent = mensajes[informacion.calificaciones[11]];
 //console.log(tablaDatos.childNodes[1])
 //itero sobre los datos
 //  informacion.calificaciones.forEach(nota => {

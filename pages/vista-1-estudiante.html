@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../styles/estilo-index.css">
 	<link rel="stylesheet" type="text/css" href="../vista-1-docente.html">
+	<link rel="icon" href="../img/icon.jpg" type="image/png">
 	<script src="../scripts/proj.js"></script>
 	<script src="/scripts/script.js"></script>
 	<title>Cargar video</title>
@@ -88,17 +89,17 @@
 			</table>
 
 			<div class="user-box">
-				<input class="user-box-textarea"></input>
-				<label class="user-box-label">Calificación general</label>
+				<p>Calificación General: <span id="calificacion-general">0</span></p>
 			</div>
 
-			<div class="user-box" onclick= "mostrarCalificaciones()">
-				<textarea class="user-box-textarea" id="observacionesGenerales"></textarea>
+			<div class="user-box" onclick="mostrarCalificaciones()">
+				<p class="user-box-textarea" id="observacionesGenerales"</p>
 				<label class="user-box-label"><br> Observaciones generales </br></label>
 			</div>
+			
 
 
-			<button type="submit" class="login-box-button">
+			<button type="button" class="login-box-button">
 				<p>Atras</p>
 			</button>
 

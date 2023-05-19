@@ -178,8 +178,9 @@ header {
 
 }
 
-.contac_form > .nav-bar-1 {
+.nav-bar-1 {
   display: flex;
+  gap: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -458,4 +459,15 @@ td {
   border-right: none;
   background: #EAF9F2;
   margin-bottom: 10px;
+}
+.student-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Ajusta este margen según sea necesario */
+}
+
+.student-label {
+  margin-top: 5px;
+  text-align: center;
 }
